@@ -1,5 +1,7 @@
 # AI Job Hunter
 
+[![Build an AI Job Hunting Team with Claude Code](assets/thumbnail.webp)](https://youtu.be/isa55iH8aj4)
+
 The scripts behind the video **[Build an AI Job Hunting Team with Claude Code](https://youtu.be/isa55iH8aj4)**: six AI agents that find jobs, research companies, tailor your resume, draft referral emails and LinkedIn messages, and prep you for interviews, all working together in one Discord channel.
 
 The agents' prompts and instructions, plus the Switch Rooms and Discord setup, are in the written notes: **[notes.roadsidecoder.com/notes/claude-code-job-hunting-agents](https://notes.roadsidecoder.com/notes/claude-code-job-hunting-agents)**.
