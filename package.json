@@ -1,0 +1,14 @@
+{
+  "name": "job-hunter",
+  "version": "1.0.0",
+  "description": "Node.js tools for an AI job-hunting agent team built with Claude Code",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "puppeteer": "^25.16.0"
+  }
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{NAME}} - Resume</title>
+<style>
+  @page { size: A4; margin: 14mm 15mm; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.4;
+    color: #1f2933;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  header { border-bottom: 2px solid #2b4c7e; padding-bottom: 6px; margin-bottom: 10px; }
+  h1 { margin: 0; font-size: 22pt; letter-spacing: 0.3px; color: #14213d; }
+  .contact { margin-top: 3px; font-size: 9.5pt; color: #52606d; }
+  .contact span + span::before { content: "\00b7"; margin: 0 6px; }
+  h2 {
+    margin: 12px 0 5px;
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2b4c7e;
+    border-bottom: 1px solid #d5dde5;
+    padding-bottom: 2px;
+  }
+  p { margin: 0 0 4px; }
+  .item { margin-bottom: 8px; break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; gap: 12px; }
+  .row .title { font-weight: 600; }
+  .row .meta { color: #52606d; white-space: nowrap; font-size: 9.5pt; }
+  .sub { color: #52606d; font-style: italic; }
+  ul { margin: 3px 0 0; padding-left: 16px; }
+  li { margin-bottom: 2px; }
+  .skills p strong { color: #14213d; }
+  a { color: inherit; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>{{NAME}}</h1>
+  <div class="contact">
+    <span>{{EMAIL}}</span><span>{{PHONE}}</span><span>{{LOCATION}}</span><span>{{LINKEDIN}}</span><span>{{GITHUB / PORTFOLIO}}</span>
+  </div>
+</header>
+
+<section>
+  <h2>Summary</h2>
+  <p>{{2-3 sentence summary tailored to the role}}</p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <!-- repeat .item per role -->
+  <div class="item">
+    <div class="row"><span class="title">{{Job Title}}, {{Company}}</span><span class="meta">{{Mon YYYY}} - {{Mon YYYY / Present}}</span></div>
+    <div class="sub">{{Location}}</div>
+    <ul>
+      <li>{{Achievement with measurable impact}}</li>
+      <li>{{Achievement with measurable impact}}</li>
+      <li>{{Achievement with measurable impact}}</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <!-- repeat .item per project -->
+  <div class="item">
+    <div class="row"><span class="title">{{Project Name}}</span><span class="meta">{{link or stack}}</span></div>
+    <ul>
+      <li>{{What it does and the result}}</li>
+      <li>{{Key technical detail}}</li>
+    </ul>
+  </div>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <p><strong>Languages:</strong> {{...}}</p>
+  <p><strong>Frameworks &amp; Tools:</strong> {{...}}</p>
+  <p><strong>Other:</strong> {{...}}</p>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="item">
+    <div class="row"><span class="title">{{Degree}}, {{Institution}}</span><span class="meta">{{YYYY - YYYY}}</span></div>
+  </div>
+</section>
+
+</body>
+</html>
